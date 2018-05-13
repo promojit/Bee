@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bee</title>
+    <!-- Bee Style -->
+    <link href="./../source/css/bee.css" rel="stylesheet" />
+    <!-- Custom Style -->
+    <link href="./style.css" rel="stylesheet" />
+    <!-- Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="dashboard-layout">
+            <!-- Sidebar -->
+            <div class="sidebar shadow-2">
+                <div class="sidebar-brand">
+                    <a href="index.html">
+                        <img src="images/logo.svg" />
+                    </a>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-list-item">
+                        <a href="grid.html">
+                            <i class="material-icons">view_module</i> Grid
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="list.html">
+                            <i class="material-icons">list</i> Menu List
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="content">
+                <div class="wrapper">
+                    <div class="container-wide">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="headline">Grid</h1>
+                            </div>
+                        </div>
+
+                        <!-- Grid Width Specify -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Simple Grid</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="block">
+                                    col
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="block">
+                                    col
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="block">
+                                    col
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="block">
+                                    col
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="block">
+                                    col
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                    <!-- codes start -->
+    &lt;!-- Simple Grid --&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            col
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            col
+        &lt;/div&gt;
+        &lt;div class=&quot;col&quot;&gt;
+            col
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!-- Grid Width Specify -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Grid Width Specify</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col md-6">
+                                <div class="block">
+                                    col md-6
+                                </div>
+                            </div>
+                            <div class="col md-3">
+                                <div class="block">
+                                    col md-3
+                                </div>
+                            </div>
+                            <div class="col md-3">
+                                <div class="block">
+                                    col md-3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col sm-9">
+                                <div class="block">
+                                    col sm-9
+                                </div>
+                            </div>
+                            <div class="col sm-3">
+                                <div class="block">
+                                    col sm-3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col xs-6">
+                                <div class="block">
+                                    col xs-6
+                                </div>
+                            </div>
+                            <div class="col xs-6">
+                                <div class="block">
+                                    col xs-6
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                    <!-- codes start -->
+    &lt;!-- Grid Width Specify --&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col md-6&quot;&gt;
+            col md-6
+        &lt;/div&gt;
+        &lt;div class=&quot;col md-3&quot;&gt;
+            col md-3
+        &lt;/div&gt;
+        &lt;div class=&quot;col md-3&quot;&gt;
+            col md-3
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col sm-9&quot;&gt;
+            col sm-9
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-3&quot;&gt;
+            col sm-3
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col xs-6&quot;&gt;
+            col xs-6
+        &lt;/div&gt;
+        &lt;div class=&quot;col xs-6&quot;&gt;
+            col xs-6
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!-- Combine Grid Classes -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Combine Grid Classes</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col md-6 sm-12">
+                                <div class="block">
+                                    col md-6 sm-12
+                                </div>
+                            </div>
+                            <div class="col md-3 sm-6">
+                                <div class="block">
+                                    col md-3 sm-6
+                                </div>
+                            </div>
+                            <div class="col md-3 sm-6">
+                                <div class="block">
+                                    col md-3 sm-6
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col md-9 sm-6">
+                                <div class="block">
+                                    col md-9 sm-6
+                                </div>
+                            </div>
+                            <div class="col md-3 sm-6">
+                                <div class="block">
+                                    col md-3 sm-6
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col sm-8 xs-4">
+                                <div class="block">
+                                    col sm-9 xs-3
+                                </div>
+                            </div>
+                            <div class="col sm-4 xs-8">
+                                <div class="block">
+                                    col sm-3 xs-9
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                    <!-- codes start -->
+    &lt;!-- Combine Grid Classes --&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col md-6 sm-12&quot;&gt;
+                col md-6 sm-12
+        &lt;/div&gt;
+        &lt;div class=&quot;col md-3 sm-6&quot;&gt;
+                col md-3 sm-6
+        &lt;/div&gt;
+        &lt;div class=&quot;col md-3 sm-6&quot;&gt;
+                col md-3 sm-6
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col md-9 sm-6&quot;&gt;
+                col md-9 sm-6
+        &lt;/div&gt;
+        &lt;div class=&quot;col md-3 sm-6&quot;&gt;
+                col md-3 sm-6
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col sm-8 xs-4&quot;&gt;
+                col sm-9 xs-3
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-4 xs-8&quot;&gt;
+                col sm-3 xs-9
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!-- Align Grids -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Align Grids</h2>
+                            </div>
+                        </div>
+
+                        <!-- Align Start -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="sub-headline">Align Sart</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="block-outer">
+                                    <div class="row align-start">
+                                        <div class="col sm-4">
+                                            <div class="block-single height-50">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4">
+                                            <div class="block-single height-100">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4">
+                                            <div class="block-single height-150">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                    <!-- codes start -->
+    &lt;!-- Grid Align Start --&gt;
+
+    &lt;div class=&quot;row align-start&quot;&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+            col sm-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+            col sm-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+            col sm-4
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!-- Align End -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="sub-headline">Align End</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="block-outer">
+                                    <div class="row align-end">
+                                        <div class="col sm-4">
+                                            <div class="block-single height-50">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4">
+                                            <div class="block-single height-100">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4">
+                                            <div class="block-single height-150">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                    <!-- codes start -->
+    &lt;!-- Grid Align End --&gt;
+
+    &lt;div class=&quot;row align-end&quot;&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!-- Align Center -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="sub-headline">Align Center</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="block-outer">
+                                    <div class="row align-center">
+                                        <div class="col sm-4">
+                                            <div class="block-single height-50">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4">
+                                            <div class="block-single height-100">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4">
+                                            <div class="block-single height-150">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                    <!-- codes start -->
+    &lt;!-- Grid Align Center --&gt;
+
+    &lt;div class=&quot;row align-center&quot;&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!-- Justify Grids -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Justify Grids</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-start">
+                            <div class="col sm-4">
+                                <div class="block">
+                                    col sm-4
+                                </div>
+                            </div>
+                            <div class="col sm-2">
+                                <div class="block">
+                                    col sm-2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-end">
+                            <div class="col sm-2">
+                                <div class="block">
+                                    col sm-2
+                                </div>
+                            </div>
+                            <div class="col sm-3">
+                                <div class="block">
+                                    col sm-3
+                                </div>
+                            </div>
+                            <div class="col sm-4">
+                                <div class="block">
+                                    col sm-4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-center">
+                            <div class="col sm-4">
+                                <div class="block">
+                                    col sm-4
+                                </div>
+                            </div>
+                            <div class="col sm-5">
+                                <div class="block">
+                                    col sm-5
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-between">
+                            <div class="col sm-3">
+                                <div class="block">
+                                    col sm-2
+                                </div>
+                            </div>
+                            <div class="col sm-3">
+                                <div class="block">
+                                    col sm-3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-around">
+                            <div class="col sm-3">
+                                <div class="block">
+                                    col sm-3
+                                </div>
+                            </div>
+                            <div class="col sm-2">
+                                <div class="block">
+                                    col sm-2
+                                </div>
+                            </div>
+                            <div class="col sm-2">
+                                <div class="block">
+                                    col sm-2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-evenly">
+                            <div class="col sm-3">
+                                <div class="block">
+                                    col sm-3
+                                </div>
+                            </div>
+                            <div class="col sm-3">
+                                <div class="block">
+                                    col sm-3
+                                </div>
+                            </div>
+                            <div class="col sm-2">
+                                <div class="block">
+                                    col sm-2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                    <!-- codes start -->
+    &lt;!-- Grid Justify Start --&gt;
+
+    &lt;div class=&quot;row justify-start&quot;&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-2&quot;&gt;
+                col sm-2
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Grid Justify End --&gt;
+
+    &lt;div class=&quot;row justify-end&quot;&gt;
+        &lt;div class=&quot;col sm-2&quot;&gt;
+                col sm-2
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-3&quot;&gt;
+                col sm-3
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Grid Justify Center --&gt;
+
+    &lt;div class=&quot;row justify-center&quot;&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-5&quot;&gt;
+                col sm-5
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Grid Justify Between --&gt;
+
+    &lt;div class=&quot;row justify-between&quot;&gt;
+        &lt;div class=&quot;col sm-3&quot;&gt;
+                col sm-2
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-3&quot;&gt;
+                col sm-3
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Grid Justify Around --&gt;
+
+    &lt;div class=&quot;row justify-around&quot;&gt;
+        &lt;div class=&quot;col sm-3&quot;&gt;
+                col sm-3
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-2&quot;&gt;
+                col sm-2
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-2&quot;&gt;
+                col sm-2
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Grid Justify Evenly --&gt;
+
+    &lt;div class=&quot;row justify-evenly&quot;&gt;
+        &lt;div class=&quot;col sm-3&quot;&gt;
+                col sm-3
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-3&quot;&gt;
+                col sm-3
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-2&quot;&gt;
+                col sm-2
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!-- Align Items -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="title">Align Items</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="block-outer">
+                                    <div class="row height-150">
+                                        <div class="col sm-4 align-self-start">
+                                            <div class="block">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4 align-self-center">
+                                            <div class="block">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4 align-self-end">
+                                            <div class="block">
+                                                col sm-4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                    <!-- codes start -->
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;!-- Align Self Start --&gt;
+        &lt;div class=&quot;col sm-4 align-self-start&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+        &lt;!-- Align Self Center --&gt;
+        &lt;div class=&quot;col sm-4 align-self-center&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+        &lt;!-- Align Self End --&gt;
+        &lt;div class=&quot;col sm-4 align-self-end&quot;&gt;
+                col sm-4
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                        <!-- Grid Offset -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="title">Grid Offset</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col sm-4 sm-offset-4">
+                                <div class="block">
+                                    col sm-4
+                                </div>
+                            </div>
+                            <div class="col sm-4">
+                                <div class="block">
+                                    col sm-4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col md-6 md-offset-3">
+                                <div class="block">
+                                    col sm-4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                    <!-- codes start -->
+    &lt;!-- Grid Offset --&gt;
+                                
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col sm-4 sm-offset-4&quot;&gt;
+            &lt;div class=&quot;block&quot;&gt;
+                col sm-4
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col sm-4&quot;&gt;
+            &lt;div class=&quot;block&quot;&gt;
+                col sm-4
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col md-6 md-offset-3&quot;&gt;
+            &lt;div class=&quot;block&quot;&gt;
+                col sm-4
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../source/js/bee.js"></script>
+</body>
+
+</html>

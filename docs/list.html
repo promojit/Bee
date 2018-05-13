@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bee</title>
+    <!-- Bee Style -->
+    <link href="./../source/css/bee.css" rel="stylesheet" />
+    <!-- Custom Style -->
+    <link href="./style.css" rel="stylesheet" />
+    <!-- Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="dashboard-layout">
+            <!-- Sidebar -->
+            <div class="sidebar shadow-2">
+                <div class="sidebar-brand">
+                    <a href="index.html">
+                        <img src="images/logo.svg" />
+                    </a>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-list-item">
+                        <a href="grid.html">
+                            <i class="material-icons">view_module</i> Grid
+                        </a>
+                    </li>
+                    <li class="menu-list-item">
+                        <a href="list.html">
+                            <i class="material-icons">list</i> Menu List
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="content">
+                <div class="wrapper">
+                    <div class="container-wide">
+
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="headline">Menu List</h1>
+                            </div>
+                        </div>
+
+                        <!-- Simple Menu List -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Simple Menu List</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-center">
+                            <div class="col sm-4">
+                                <!-- Menu List With Header -->
+
+                                <ul class="menu-list">
+                                    <li class="menu-list-header">
+                                        <p>Fruits - A</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Apple
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Apricots
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-header">
+                                        <p>Fruits - B</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Banana
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Blueberries
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Breadfruit
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col sm-4">
+
+                                <!-- Menu List With Active Class -->
+
+                                <ul class="menu-list">
+                                    <li class="menu-list-header">
+                                        <p>Menu List Header</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Menu List Item
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item active">
+                                        <a href="#">
+                                            Menu List Active
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Menu List Item
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Menu List Item
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                        <code>
+                                        <!-- codes start -->
+    &lt;!-- Simple Menu List --&gt;
+
+    &lt;ul class=&quot;menu-list&quot;&gt;
+        &lt;li class=&quot;menu-list-header&quot;&gt;
+            &lt;p&gt;Fruits - A&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Apple
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Apricots
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-header&quot;&gt;
+            &lt;p&gt;Fruits - B&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Banana
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Blueberries
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Breadfruit
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- Menu List With Active Class --&gt;
+
+    &lt;ul class=&quot;menu-list&quot;&gt;
+        &lt;li class=&quot;menu-list-header&quot;&gt;
+            &lt;p&gt;Menu List Header&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Menu List Item
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item active&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Menu List Active
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Menu List Item
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Menu List Item
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+                                        <!-- codes end -->
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+
+                        <!-- Simple Menu List -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Menu List Styles</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-center">
+                            <div class="col sm-4">
+
+                                <!-- List With Icon -->
+
+                                <ul class="menu-list">
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <i class="material-icons">email</i> Email
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <i class="material-icons">edit</i> Edit
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <i class="material-icons">send</i> Send
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <i class="material-icons">inbox</i> Inbox
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <i class="material-icons">archive</i> Archive
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col sm-4">
+
+                                <!-- Simple List -->
+
+                                <ul class="menu-list">
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Email
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Edit
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Send
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Inbox
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Archive
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col sm-4">
+
+                                <!-- Menu List With Image -->
+
+                                <ul class="menu-list">
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <img alt="img" src="images/1.png"> Clareta Aizikovitz
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <img alt="img" src="images/2.png"> Kelwin Elia
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <img alt="img" src="images/3.png"> Dinnie Lanaway
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <img alt="img" src="images/4.png"> Josselyn Lambrecht
+                                        </a>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            <img alt="img" src="images/5.png"> Hewe Kruszelnicki
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                        <code>
+                                        <!-- codes start -->
+    &lt;!-- List With Icon --&gt;
+
+    &lt;ul class=&quot;menu-list&quot;&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;email&lt;/i&gt; Email
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;edit&lt;/i&gt; Edit
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;send&lt;/i&gt; Send
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;inbox&lt;/i&gt; Inbox
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;archive&lt;/i&gt; Archive
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- Simple List --&gt;
+
+    &lt;ul class=&quot;menu-list&quot;&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Email
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Edit
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Send
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Inbox
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Archive
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- List With Image --&gt;
+
+    &lt;ul class=&quot;menu-list&quot;&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img alt=&quot;img&quot; src=&quot;#&quot;&gt; Clareta Aizikovitz
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img alt=&quot;img&quot; src=&quot;#&quot;&gt; Kelwin Elia
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img alt=&quot;img&quot; src=&quot;#&quot;&gt; Dinnie Lanaway
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img alt=&quot;img&quot; src=&quot;#&quot;&gt; Josselyn Lambrecht
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img alt=&quot;img&quot; src=&quot;#&quot;&gt; Hewe Kruszelnicki
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+                                        <!-- codes end -->
+                                        </code>
+                                    </pre>
+                            </div>
+                        </div>
+
+                        <!-- Menu List With Controls -->
+
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Menu List With Controls</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-center">
+                            <div class="col sm-4">
+
+                                <!-- With Clickable Link -->
+
+                                <ul class="menu-list">
+                                    <li class="menu-list-header">
+                                        <p>With Clickable Link</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Clareta Aizikovitz
+                                        </a>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Kelwin Elia
+                                        </a>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Dinnie Lanaway
+                                        </a>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Josselyn Lambrecht
+                                        </a>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <a href="#">
+                                            Hewe Kruszelnicki
+                                        </a>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col sm-4">
+
+                                <!-- Without Clickable Link -->
+
+                                <ul class="menu-list">
+                                    <li class="menu-list-header">
+                                        <p>Without Clickable Link</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <p>
+                                            Clareta Aizikovitz
+                                        </p>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <p>
+                                            Kelwin Elia
+                                        </p>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <p>
+                                            Dinnie Lanaway
+                                        </p>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <p>
+                                            Josselyn Lambrecht
+                                        </p>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <p>
+                                            Hewe Kruszelnicki
+                                        </p>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                edit
+                                            </i>
+                                        </button>
+                                        <button class="icon-button">
+                                            <i class="material-icons">
+                                                delete
+                                            </i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <pre class="prettyprint  lang-html code-wrapper">
+                                    <code>
+                                            <!-- codes start -->
+    &lt;!-- With Clickable Link --&gt;
+
+    &lt;ul class=&quot;menu-list&quot;&gt;
+        &lt;li class=&quot;menu-list-header&quot;&gt;
+            &lt;p&gt;With Clickable Link&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Clareta Aizikovitz
+            &lt;/a&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Kelwin Elia
+            &lt;/a&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Dinnie Lanaway
+            &lt;/a&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Josselyn Lambrecht
+            &lt;/a&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                Hewe Kruszelnicki
+            &lt;/a&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- Without Clickable Link --&gt;
+
+    &lt;ul class=&quot;menu-list&quot;&gt;
+        &lt;li class=&quot;menu-list-header&quot;&gt;
+            &lt;p&gt;Without Clickable Link&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;p&gt;
+                Clareta Aizikovitz
+            &lt;/p&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;p&gt;
+                Kelwin Elia
+            &lt;/p&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;p&gt;
+                Dinnie Lanaway
+            &lt;/p&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;p&gt;
+                Josselyn Lambrecht
+            &lt;/p&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-list-item&quot;&gt;
+            &lt;p&gt;
+                Hewe Kruszelnicki
+            &lt;/p&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    edit
+                &lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;icon-button&quot;&gt;
+                &lt;i class=&quot;material-icons&quot;&gt;
+                    delete
+                &lt;/i&gt;
+            &lt;/button&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+                                        <!-- codes end -->
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../source/js/bee.js"></script>
+</body>
+
+</html>
