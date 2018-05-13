@@ -7,7 +7,8 @@ body {
 }
 
 :root {
-  --primary: #ffc013;
+  --primary: #ffce13;
+  --primaryDark: #f7c70b;
   --secondary: #ffa913;
   --text: #797979;
   --border: #c1c1c1;
@@ -30,13 +31,33 @@ h6 {
   color: var(--text);
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
 p {
   margin: 2px 0 10px;
   color: var(--text);
-}
-
-.text-center {
-  text-align: center;
 }
 
 .headline {
@@ -49,6 +70,22 @@ p {
 
 .title {
   font-size: 1.5rem;
+}
+
+.caption {
+  font-size: 0.8rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }
 
 /* Grid */
@@ -647,6 +684,7 @@ p {
   list-style: none;
   border: 1px solid var(--border);
   border-radius: 5px;
+  background: var(--white);
 }
 
 .menu-list-item {
