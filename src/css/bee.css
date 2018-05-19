@@ -252,6 +252,15 @@ strong {
   width: 100%;
 }
 
+.xs-hidden,
+.sm-hidden,
+.md-hidden,
+.lg-hidden {
+  display: none;
+  clear: both;
+  visibility: hidden;
+}
+
 @media screen and (min-width: 320px) {
   .xs-1 {
     flex-basis: 8.33333333%;
@@ -359,6 +368,12 @@ strong {
 
   .xs-offset-12 {
     margin-left: 100%;
+  }
+
+  .xs-hidden {
+    display: inherit;
+    clear: none;
+    visibility: visible;
   }
 }
 
@@ -469,6 +484,12 @@ strong {
   .sm-offset-12 {
     margin-left: 100%;
   }
+
+  .sm-hidden {
+    display: inherit;
+    clear: none;
+    visibility: visible;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -567,6 +588,12 @@ strong {
 
   .md-offset-12 {
     margin-left: 100%;
+  }
+
+  .md-hidden {
+    display: inherit;
+    clear: none;
+    visibility: visible;
   }
 }
 
@@ -677,6 +704,12 @@ strong {
 
   .lg-offset-12 {
     margin-left: 100%;
+  }
+
+  .lg-hidden {
+    display: inherit;
+    clear: none;
+    visibility: visible;
   }
 }
 
