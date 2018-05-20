@@ -7,15 +7,22 @@ body {
 }
 
 :root {
-  --primaryLight: #ffe16b;
+  --primarylight: #ffe16b;
   --primary: #ffce13;
-  --primaryDark: #dfb50d;
+  --primarydark: #8c7312;
+
+  --secondarylight: #fac263;
   --secondary: #ffa913;
+  --secondarydark: #ad7e2b;
+
+  --graylight: #f1f1f1;
+  --gray: #bebebe;
+  --graydark: #919191;
+
   --text: #797979;
   --border: #c1c1c1;
   --white: #ffffff;
-  --gray: #d3d3d3;
-  --graydark: #b9b9b9;
+  --lightcolor: rgba(92, 92, 92, 0.2);
 }
 
 /* Text */
@@ -745,7 +752,7 @@ strong {
 .menu-list-item.disabled {
   color: currentColor;
   cursor: none;
-  opacity: 0.5;
+  opacity: 0.3;
   text-decoration: none;
   pointer-events: none;
 }
@@ -809,22 +816,6 @@ strong {
   color: var(--white);
 }
 
-.menu-list-item a:focus:not(:active) {
-  animation: clickShadow 0.2s ease-in-out;
-}
-
-@keyframes clickShadow {
-  0% {
-    box-shadow: inset 0 0 0px var(--primaryDark);
-  }
-  50% {
-    box-shadow: inset 0 0 40px var(--primaryDark);
-  }
-  100% {
-    box-shadow: inset 0 0 0px var(--primaryDark);
-  }
-}
-
 .menu-list .menu-list-item:not(:last-child) {
   border-bottom: 1px solid var(--border);
 }
@@ -846,4 +837,219 @@ strong {
   display: inline-block;
   margin-right: 10px;
   border-radius: 50%;
+}
+
+/* Single Button */
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid var(--graylight);
+  background: var(--graylight);
+  color: var(--text);
+  min-width: 100px;
+  min-height: 45px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 4px;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.button.large {
+  font-size: 20px;
+  min-height: 56px;
+  min-width: 200px;
+}
+
+.button.small {
+  font-size: 14px;
+  min-height: 40px;
+  min-width: 100px;
+}
+
+.button.disabled {
+  color: currentColor;
+  cursor: none;
+  opacity: 0.3;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.button.primary {
+  border: 2px solid var(--primary);
+  background: var(--primary);
+  color: var(--white);
+}
+
+.button.secondary {
+  border: 2px solid var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+/* Complex Button */
+
+.complex-button {
+  border-radius: 5px;
+  border: 2px solid var(--graylight);
+  background: var(--graylight);
+  color: var(--text);
+  outline: none;
+  font-size: 16px;
+  min-height: 45px;
+  min-width: 100px;
+  cursor: pointer;
+  margin-bottom: 4px;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.complex-button.disabled {
+  color: currentColor;
+  cursor: none;
+  opacity: 0.3;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.complex-button.primary {
+  border: 2px solid var(--primary);
+  background: var(--primary);
+  color: var(--white);
+}
+
+.complex-button.secondary {
+  border: 2px solid var(--secondary);
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.complex-button.left {
+  padding: 10px 10px 10px 50px;
+}
+
+.complex-button.left .material-icons {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.complex-button.right {
+  padding: 10px 50px 10px 10px;
+}
+
+.complex-button.right .material-icons {
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* Icon Button */
+
+.icon-button {
+  background: transparent;
+  color: var(--text);
+  width: 38px;
+  height: 38px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-button.disabled {
+  color: currentColor;
+  cursor: none;
+  opacity: 0.3;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.icon-button.primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.icon-button.secondary {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.icon-button:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+/* Icon Button Large */
+
+.icon-button-large {
+  background: transparent;
+  color: var(--text);
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-button-large.disabled {
+  color: currentColor;
+  cursor: none;
+  opacity: 0.3;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.icon-button-large.primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.icon-button-large.secondary {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.icon-button-large:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+/*  Ripple */
+
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(100, 100, 100, 0.4);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleEffect {
+  animation: rippleDrop 0.3s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
