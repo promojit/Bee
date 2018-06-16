@@ -51,3 +51,20 @@ $(
     })
     .addClass("rippleEffect");
 });
+
+// Toolbar Menu
+
+$(".toolbar-nav-toggle").click(function() {
+  $(this)
+    .parents(".toolbar-nav")
+    .children(".toolbar-nav-wrapper")
+    .addClass("toolbar-nav-open");
+  $(".toolbar-nav-wrapper").after(
+    "<span class='toolbar-nav-open-after'></span>"
+  );
+});
+
+$(document).on("click", ".toolbar-nav-open-after", function() {
+  $(".toolbar-nav-wrapper").removeClass("toolbar-nav-open");
+  $(".toolbar-nav-open-after").remove();
+});
