@@ -1,16 +1,16 @@
 // Sidebar Toggle
 
-$(".sidebar-toggle").click(function() {
+$(".sidebar-mobile-toggle").click(function() {
   // Remove any old one
   $(".sidebar-show-background").remove();
   // Add the element
-  $(".sidebar").addClass("sidebar-show");
+  $(".sidebar").addClass("show");
   $(".sidebar").after("<span class='sidebar-show-background'></span>");
 });
 
 $(document).on("click", ".sidebar-show-background", function() {
   $(".sidebar-show-background").remove();
-  $(".sidebar").removeClass("sidebar-show");
+  $(".sidebar").removeClass("show");
 });
 
 // Ripple Effect
@@ -59,6 +59,7 @@ $(".toolbar-nav-toggle").click(function() {
     .parents(".toolbar-nav")
     .children(".toolbar-nav-wrapper")
     .addClass("toolbar-nav-open");
+
   $(".toolbar-nav-wrapper").after(
     "<span class='toolbar-nav-open-after'></span>"
   );

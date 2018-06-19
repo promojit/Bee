@@ -21,7 +21,7 @@ body {
 
   --text: #797979;
   --textshade: rgba(121, 121, 121, 0.6);
-  --border: #c1c1c1;
+  --border: rgba(191, 191, 191, 0.3);
   --white: #ffffff;
   --lightcolor: rgba(92, 92, 92, 0.2);
   --transparent: rgba(43, 43, 43, 0.05);
@@ -1156,10 +1156,10 @@ strong {
   box-shadow: 0 0 36px 0px rgba(90, 90, 90, 0.7);
 }
 
-/* Layout */
+/* Dashboard */
 
 .dashboard-layout {
-  position: fixed;
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
@@ -1216,14 +1216,19 @@ strong {
 }
 
 .sidebar {
+  background: #ffffff;
+  overflow-y: auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sidebar.left {
+  z-index: 3;
   position: fixed;
   width: 290px;
   height: 100vh;
   left: 0px;
   top: 0;
-  background: #ffffff;
-  overflow-y: auto;
-  z-index: 3;
 }
 
 .sidebar .menu-list {
@@ -1254,19 +1259,19 @@ strong {
   background: rgba(0, 0, 0, 0.57);
 }
 
-.sidebar-toggle {
+.sidebar-mobile-toggle {
   display: none;
 }
 
 @media screen and (max-width: 1024px) {
-  .sidebar {
+  .sidebar.left {
     left: -290px;
   }
-  .sidebar-toggle {
+  .sidebar-mobile-toggle {
     display: block;
   }
-  .sidebar-show {
-    left: 0;
+  .sidebar.left.show {
+    left: 0px;
   }
   .sidebar[class*="shadow"] {
     box-shadow: none;
@@ -1284,6 +1289,8 @@ strong {
   flex-direction: row;
   align-items: center;
   margin-bottom: 10px;
+  -webkit-transition: min-height 0.3 ease;
+  transition: min-height 0.3s ease;
 }
 
 .toolbar.primary {
@@ -1345,6 +1352,8 @@ strong {
   margin: 0 5px;
 }
 
+.toolbar.primary .toolbar-nav a:hover,
+.toolbar.secondary .toolbar-nav a:hover,
 .toolbar-nav a:hover {
   color: var(--textshade);
 }
@@ -1358,6 +1367,7 @@ strong {
   }
   .toolbar-nav-wrapper {
     display: none;
+    transform: scale(0);
     position: absolute;
     z-index: 5;
     background: var(--white);
@@ -1366,6 +1376,8 @@ strong {
     box-shadow: 0 0 18px 0px rgba(90, 90, 90, 0.4);
     border-radius: 5px;
     padding: 5px 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
   .toolbar-nav a {
     padding: 10px 15px;
@@ -1380,6 +1392,7 @@ strong {
   }
   .toolbar-nav-open {
     display: block;
+    transform: scale(1);
   }
   .toolbar-nav-open-after {
     position: fixed;
