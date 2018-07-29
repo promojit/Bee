@@ -1,25 +1,40 @@
-// Sidebar Toggle
+// Drawer Toggle
 
-$(".sidebar-mobile-toggle").click(function() {
+$('.drawer-toggler').click(function() {
+  var drawerSelector = $(this).data('target');
   // Remove any old one
-  $(".sidebar-show-background").remove();
-  // Add the element
-  $(".sidebar").addClass("show");
-  $(".sidebar").after("<span class='sidebar-show-background'></span>");
+  $('.drawer-show-background').remove();
+  $(drawerSelector).toggleClass('show hide');
+  $(drawerSelector).after("<span class='drawer-show-background'></span>");
 });
 
-$(document).on("click", ".sidebar-show-background", function() {
-  $(".sidebar-show-background").remove();
-  $(".sidebar").removeClass("show");
+$(document).on('click', '.drawer-show-background', function() {
+  $(this)
+    .prev('.drawer')
+    .toggleClass('show hide');
+  $(this).remove();
+});
+
+// On Resize Window Change Drawer Setup
+
+$(window).on('resize', function() {
+  var win = $(this);
+  if (win.width() >= 1120) {
+    if ($('.drawer.auto').hasClass('hide')) {
+      // Remove any old one
+      $('.drawer-show-background').remove();
+      $('.drawer.auto').toggleClass('show hide');
+    }
+  }
 });
 
 // Ripple Effect
 
 $(
-  ".button, .menu-list-item a, .icon-button, .icon-button-large, .complex-button"
+  '.button, .menu-list-item a, .icon-button, .icon-button-large, .complex-button'
 ).click(function(e) {
   // Remove any old one
-  $(".ripple").remove();
+  $('.ripple').remove();
 
   // Setup
   var posX = $(this).offset().left,
@@ -42,30 +57,29 @@ $(
   var y = e.pageY - posY - objHeight / 2;
 
   // Add the ripples CSS and start the animation
-  $(".ripple")
+  $('.ripple')
     .css({
       width: objWidth,
       height: objHeight,
-      top: y + "px",
-      left: x + "px"
+      top: y + 'px',
+      left: x + 'px'
     })
-    .addClass("rippleEffect");
+    .addClass('rippleEffect');
 });
 
 // Toolbar Menu
 
-$(".toolbar-nav-toggle").click(function() {
+$('.toolbar-nav-toggle').click(function() {
   $(this)
-    .parents(".toolbar-nav")
-    .children(".toolbar-nav-wrapper")
-    .addClass("toolbar-nav-open");
-
-  $(".toolbar-nav-wrapper").after(
+    .parents('.toolbar-nav')
+    .children('.toolbar-nav-wrapper')
+    .addClass('toolbar-nav-open');
+  $('.toolbar-nav-wrapper').after(
     "<span class='toolbar-nav-open-after'></span>"
   );
 });
 
-$(document).on("click", ".toolbar-nav-open-after", function() {
-  $(".toolbar-nav-wrapper").removeClass("toolbar-nav-open");
-  $(".toolbar-nav-open-after").remove();
+$(document).on('click', '.toolbar-nav-open-after', function() {
+  $('.toolbar-nav-wrapper').removeClass('toolbar-nav-open');
+  $('.toolbar-nav-open-after').remove();
 });
